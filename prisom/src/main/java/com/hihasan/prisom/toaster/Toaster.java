@@ -1,5 +1,6 @@
 package com.hihasan.prisom.toaster;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -121,4 +122,7 @@ public class Toaster extends Toast {
         toast.show();
         return toast;
     }
+=======
+public class Toaster {
+>>>>>>> d7d666e60f086b9c609a78258da400040437eb5f
 }
