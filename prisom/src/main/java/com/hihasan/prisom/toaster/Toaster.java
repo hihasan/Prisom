@@ -1,6 +1,5 @@
 package com.hihasan.prisom.toaster;
 
-<<<<<<< HEAD
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -41,12 +40,12 @@ public class Toaster extends Toast {
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
-        l1.setText(message);
-        if (androidIcon)
-            img1.setVisibility(View.VISIBLE);
-        else if (!androidIcon)
-            img1.setVisibility(View.GONE);
+//        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+//        l1.setText(message);
+//        if (androidIcon)
+//            img1.setVisibility(View.VISIBLE);
+//        else if (!androidIcon)
+//            img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -86,13 +85,13 @@ public class Toaster extends Toast {
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+        //ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
         l1.setText(message);
         img.setImageResource(ImageResource);
-        if (androidIcon)
-            img1.setVisibility(View.VISIBLE);
-        else if (!androidIcon)
-            img1.setVisibility(View.GONE);
+//        if (androidIcon)
+//            //img1.setVisibility(View.VISIBLE);
+//        else if (!androidIcon)
+//            img1.setVisibility(View.GONE);
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -122,7 +121,4 @@ public class Toaster extends Toast {
         toast.show();
         return toast;
     }
-=======
-public class Toaster {
->>>>>>> d7d666e60f086b9c609a78258da400040437eb5f
 }
