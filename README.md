@@ -1,3 +1,4 @@
+
 ![Prisom](https://raw.githubusercontent.com/hihasan/Prisom/master/app/src/main/res/drawable-v24/app_logo.png)
 # Prisom
 
@@ -9,11 +10,22 @@
 Following components are being developed in Prisom-
 
  1. Toaster
- 2. Fabulous
- 3. BoomBox
- 4. Blurry
- 5. ProgressAction
- 6. Swipey
- 7. Hook
+ 2. BUTTERFLY 
+ 3. Fabulous (Develop in Progress) 
+ 4. BoomBox (Develop in Progress)
+ 5.lurry (Develop in Progress)
+ 6. ProgressAction (Develop in Progress)
+ 7. Swipey (Develop in Progress)
+ 8. Hook (Develop in Progress)
 
-# Usage 
+# How To Integrate
+
+[build.gradle](https://gist.github.com/hihasan/299571c8917942439f63f98454b0b128)
+[build.gradle](https://gist.github.com/hihasan/e29a38f77fb1958bdbcee5c5aada7025)
+
+
+# Integrate
+	#Toaster
+	
+
+    Toaster.makeText(getApplicationContext(),"Hello World !",Toaster.SUCCESS,true);
