@@ -35,17 +35,12 @@ public class Toaster extends Toast {
     public static Toast makeText(Context context, String message, int type, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(LENGTH_SHORT);
-//        toast.show();
+        toast.show();
         View layout = LayoutInflater.from(context).inflate(R.layout.activity_toaster, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-//        ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
-//        l1.setText(message);
-//        if (androidIcon)
-//            img1.setVisibility(View.VISIBLE);
-//        else if (!androidIcon)
-//            img1.setVisibility(View.GONE);
+
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
@@ -80,18 +75,15 @@ public class Toaster extends Toast {
     public static Toast makeText(Context context, String message, int duration, int type, int ImageResource, boolean androidIcon) {
         Toast toast = new Toast(context);
         toast.setDuration(LENGTH_SHORT);
-        // toast.show();
+        toast.show();
         View layout = LayoutInflater.from(context).inflate(R.layout.activity_toaster, null, false);
         TextView l1 = (TextView) layout.findViewById(R.id.toast_text);
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
-        //ImageView img1 = (ImageView) layout.findViewById(R.id.imageView4);
+
         l1.setText(message);
         img.setImageResource(ImageResource);
-//        if (androidIcon)
-//            //img1.setVisibility(View.VISIBLE);
-//        else if (!androidIcon)
-//            img1.setVisibility(View.GONE);
+
         switch (type) {
             case 1:
                 linearLayout.setBackgroundResource(R.drawable.success_shape);
