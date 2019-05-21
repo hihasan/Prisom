@@ -1,4 +1,8 @@
 package com.hihasan.prisom.utils;
 
-public class ThemeButterfly {
+import com.hihasan.prisom.R;
+
+public class ThemeButterfly
+{
+    public static final int TRANSLUCENT_THEME = R.style.ButterflyTranslucent;
 }
