@@ -4,23 +4,25 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
-import android.support.annotation.AnimRes;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.IdRes;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntegerRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringRes;
-import android.support.annotation.StyleRes;
-import android.support.annotation.UiThread;
-import android.support.v7.app.AppCompatDialog;
+import androidx.annotation.AnimRes;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.IdRes;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntegerRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringRes;
+import androidx.annotation.StyleRes;
+import androidx.annotation.UiThread;
+import androidx.appcompat.app.AppCompatDialog;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
+
+import androidx.fragment.app.Fragment;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -130,7 +132,7 @@ public class Butterfly extends AppCompatDialog
             initializeSparseArray();
         }
 
-        public Builder(@NonNull android.support.v4.app.Fragment fragment) {
+        public Builder(@NonNull Fragment fragment) {
             this.context = fragment.getContext();
             initializeSparseArray();
         }
