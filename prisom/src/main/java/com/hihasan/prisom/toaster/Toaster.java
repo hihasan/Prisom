@@ -43,8 +43,6 @@ public class Toaster extends Toast {
         LinearLayout linearLayout = (LinearLayout) layout.findViewById(R.id.toast_type);
         ImageView img = (ImageView) layout.findViewById(R.id.toast_icon);
 
-//        Animation animation1 = (Animation) AnimationUtils.loadAnimation(this, R.anim.blink);
-//        img.startAnimation(animation1);
 
         l1.setText(message);
 
